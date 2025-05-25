@@ -11,7 +11,7 @@ import { LIMIT } from "@/utils/constants";
 import { Layout, Skeleton } from "antd";
 import { useEffect, useRef, useState } from "react";
 import { Product } from "../../types";
-import { registerDialogs } from "../dialogs";
+import { registerDialogs } from "../../dialogs";
 
 const { Content } = Layout;
 
