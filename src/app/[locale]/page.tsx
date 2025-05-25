@@ -20,6 +20,7 @@ export default function Home() {
   const [loading, setLoading] = useState(false);
 
   const currentPageRef = useRef(1);
+  const hasMoreRef = useRef(true);
 
   useEffect(() => {
     setLoading(true);
@@ -31,10 +32,13 @@ export default function Home() {
   }, []);
 
   const handleLoadMore = () => {
-    setLoading(true);
+    if (hasMoreRef.current) {
+      setLoading(true);
+    }
     setTimeout(() => {
       currentPageRef.current = currentPageRef.current + 1;
       const response = fetchData(currentPageRef.current, LIMIT);
+      hasMoreRef.current = response.hasMore;
       setData((prev) => [...prev, ...response.data]);
       setLoading(false);
     }, 500);
@@ -51,8 +55,7 @@ export default function Home() {
       key={product.id}
       product={product}
       className={cn(
-        "sm:!w-[252px] !w-[148px] [&_.ant-card-body]:p-[8px] [&_.ant-card-body]:sm:p-[24px]",
-        index + 1 === products.length && "123"
+        "sm:!w-[252px] !w-[148px] [&_.ant-card-body]:p-[8px] [&_.ant-card-body]:sm:p-[24px]"
       )}
       loadMore={handleLoadMore}
     />
