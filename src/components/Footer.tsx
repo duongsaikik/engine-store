@@ -149,7 +149,7 @@ const Footer = () => {
                     {t("footer.getItOn")}
                   </span>
                   <span className="text-white text-[16px] font-[600]">
-                    {t("footer.googlePlay")}
+                    {t("footer.appStore")}
                   </span>
                 </div>
               </div>
