@@ -122,7 +122,7 @@ const ProductSortBar = ({ onSortChange }: ProductSortBarProps) => {
         <span className="text-[16px] text-textPrimary font-[500] mr-[20px]">
           {t("sortBar.sortBy")}
         </span>
-        <div className="row gap-[8px]">{sortOptions1.map(renderButton)}</div>
+        <div className="row flex-wrap !justify-start gap-[8px]">{sortOptions1.map(renderButton)}</div>
         <Dropdown menu={menu} trigger={["click"]}>
           <div className="cursor-pointer">
             <span className="text-[14px] font-[500] text-textPrimary">
