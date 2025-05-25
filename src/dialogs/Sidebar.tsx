@@ -12,7 +12,6 @@ import Link from "next/link";
 import { useMemo } from "react";
 import { FaPhoneAlt } from "react-icons/fa";
 import { HiDownload } from "react-icons/hi";
-import { IoIosArrowForward } from "react-icons/io";
 
 const SideBar = NiceModal.create(() => {
   const modal = useModal();
