@@ -8,9 +8,19 @@ export default {
   ],
   theme: {
     extend: {
+      fontFamily: {
+        epilogue: ["Epilogue", "sans-serif"],
+      },
       colors: {
         background: "var(--background)",
         foreground: "var(--foreground)",
+        textPrimary: "#1C252E",
+        textSecondary: "#637381",
+        textDisabled: "#919EAB",
+        errorDark: "#B71D18",
+        errorDarker: "#7A0916",
+        warningLight: "#FFD666",
+        warningMain: "#FFAB00",
       },
     },
   },

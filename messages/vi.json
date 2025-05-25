@@ -1,0 +1,112 @@
+{
+  "title": "Cửa hàng bổ sung sức khỏe",
+  "description": "Cửa hàng trực tuyến cho vitamin và thực phẩm bổ sung",
+  "promo": "Nhập mã <p>NEWBIE</p> giảm ngay 10% cho đơn mua hàng.",
+  "download": "Tải ứng dụng",
+  "hotline": "Hotline",
+  "support": "Hỗ trợ 24/7",
+  "freeShipping": "Miễn phí vận chuyển",
+  "returnPolicy": "30 ngày đổi trả",
+  "searchPlaceholder": "Tìm sản phẩm",
+  "cart": "Giỏ hàng",
+  "account": "Tài khoản",
+  "cancel": "Huỷ",
+  "confirm": "Xác nhận",
+  "header": {
+    "searchPlaceholder": "Tìm sản phẩm",
+    "menu": {
+      "category": "Danh Mục Sản Phẩm",
+      "about": "Về Chúng Tôi",
+      "blog": "Bài Viết",
+      "catalog": "Catalog",
+      "contact": "Liên Hệ",
+      "support": "Hỗ trợ 24/7",
+      "freeShipping": "Miễn Phí Vận Chuyển",
+      "fastDelivery": "Giao Hàng Nhanh 2h",
+      "returns": "30 Ngày Đổi Trả"
+    },
+    "cart": "Giỏ hàng",
+    "account": "Tài khoản",
+    "global": "Toàn cầu"
+  },
+  "banner": {
+    "hot": "MỚI CỰC HOT!",
+    "title": "TẢI APP NHẬN QUÀ",
+    "description": "Tích điểm ngay trên app SUNFIL1\n* 100K = 10 điểm"
+  },
+  "sidebar": {
+    "filter": "Bộ Lọc",
+    "categories": "Danh mục sản phẩm",
+    "priceRange": "Khoảng giá",
+    "brands": "Thương hiệu",
+    "years": "Năm sản xuất",
+    "origins": "Xuất xứ",
+    "oilFilter": "Bộ Lọc Dầu",
+    "airFilter": "Bộ Lọc Không Khí",
+    "fuelFilter": "Bộ Lọc Nhiên Liệu",
+    "cabinFilter": "Bộ Lọc Trong Cabin",
+    "topSelling": "Sản Phẩm Bán Chạy",
+    "viewAll": "Xem tất cả",
+    "improvedAppExperience": "Trải nghiệm tốt hơn với ứng dụng"
+  },
+  "product": {
+    "title": "Sản phẩm",
+    "buyNow": "Mua ngay",
+    "shockPrice": "Giá cực sốc"
+  },
+  "footer": {
+    "company": "VIET HUNG AUTO PRODUCTION TRADING JOINT STOCK COMPANY",
+    "taxCode": "Tax Code: <value>0305094228</value>",
+    "address": "Address: <value>13 Nghia Thuc, Ward 05, District 5, Ho Chi Minh City, Viet Nam</value>",
+    "phone": "Phone number: <value>0283 760 7607</value>",
+    "hours": "Opening hour: <value>08:00 – 22:00 from Mon – Fri</value>",
+    "sitemap": "Sitemap",
+    "about": "About",
+    "article": "Article",
+    "cart": "Cart",
+    "contact": "Contact",
+    "legal": "Legal",
+    "privacy": "Privacy Policy",
+    "cookie": "Cookie Policy",
+    "delivery": "Delivery Policy",
+    "faqs": "FAQs",
+    "download": "Download App",
+    "googlePlay": "Google Play Store",
+    "appStore": "Apple App Store",
+    "getItOn": "Get It On",
+    "downloadFrom": "Download from"
+  },
+  "breadcrumb": {
+    "home": "Trang chủ",
+    "product": "Sản phẩm"
+  },
+  "priceFilter": {
+    "below100k": "Dưới 100,000 đ",
+    "range100k300k": "100,000 đ - 300,000 đ",
+    "range300k500k": "300,000 đ - 500,000 đ",
+    "above500k": "Trên 500,000 đ"
+  },
+  "sortBar": {
+    "productList": "Danh sách sản phẩm",
+    "sortBy": "Sắp xếp theo",
+    "relevance": "Liên quan",
+    "bestsellers": "Bán chạy",
+    "newest": "Mới nhất",
+    "featured": "Nổi bật",
+    "priceLowToHigh": "Giá: Thấp → Cao"
+  },
+  "benefit": {
+    "freeShipping": "Miễn phí vận chuyển",
+    "freeShippingSubtitle": "Với hoá đơn từ 1 triệu",
+    "support24_7": "Hỗ trợ 24/7",
+    "support24_7Subtitle": "Đội ngũ CSKH tận tình sẵn sàng lắng nghe và phục vụ tận tâm",
+    "fastDelivery": "Giao hàng nhanh 2h",
+    "fastDeliverySubtitle": "Trong bòng bán kính 10km nội thành TP.HCM",
+    "return30Days": "30 ngày đổi trả",
+    "return30DaysSubtitle": "Hoàn tiền 100% nếu phát sinh lỗi từ NSX hoặc đơn vị vận chuyển"
+  },
+  "notification": {
+    "storeInfo": "Xem hệ thống 88 cửa hàng trên toàn quốc",
+    "viewNow": "Xem ngay"
+  }
+}

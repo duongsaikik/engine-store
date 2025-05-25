@@ -1,0 +1,50 @@
+.customCollapse :global(.ant-collapse-header) {
+  align-items: center !important;
+}
+
+.customCollapse :global(.ant-collapse-header-text) {
+  align-items: center !important;
+  font-weight: 600;
+  color: #1c252e;
+  font-size: 20px;
+}
+
+.customSortButton {
+  height: 40px;
+  z-index: 4;
+  @apply text-[14px] font-[700] !p-[8px_16px] leading-[14px];
+}
+.buttonOutline::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  right: -1px;
+  top: -1px;
+  background-color: #0373f3;
+  color: white;
+  text-align: end;
+  z-index: 5;
+  font-size: 10;
+  clip-path: polygon(100% 0, 75% 0%, 100% 60%, 100% 100%, 100% 0);
+  border-top-right-radius: 8px;
+}
+.hightLight {
+  position: relative;
+}
+
+.hightLight::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 0;
+  transition: 0.3s all;
+}
+
+.hightLight:hover::after {
+  width: 100%;
+  height: 2px;
+  border: 1px solid #0373f3;
+}

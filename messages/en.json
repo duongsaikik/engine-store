@@ -1,0 +1,112 @@
+{
+  "title": "Health Supplements Store",
+  "description": "Online store for vitamins and supplements",
+  "promo": "Enter code <p>NEWBIE</p> for 10% off your first purchase.",
+  "download": "Download",
+  "hotline": "Hotline",
+  "support": "24/7 Support",
+  "freeShipping": "Free Shipping",
+  "returnPolicy": "30-Day Returns",
+  "searchPlaceholder": "Search products",
+  "cart": "Cart",
+  "account": "Account",
+  "cancel": "Cancel",
+  "confirm": "Confirm",
+  "header": {
+    "searchPlaceholder": "Search products",
+    "menu": {
+      "category": "Product Categories",
+      "about": "About Us",
+      "blog": "Blog",
+      "catalog": "Catalog",
+      "contact": "Contact",
+      "support": "Support 24/7",
+      "freeShipping": "Free Shipping",
+      "fastDelivery": "Fast Delivery within 2 Hours",
+      "returns": "30 Days Returns"
+    },
+    "cart": "Cart",
+    "account": "Account",
+    "global": "Global"
+  },
+  "banner": {
+    "hot": "HOT NEW!",
+    "title": "DOWNLOAD APP FOR GIFTS",
+    "description": "Earn points instantly on the SUNFIL app\n* 100K = 10 points"
+  },
+  "sidebar": {
+    "filter": "Filters",
+    "categories": "Product Categories",
+    "priceRange": "Price Range",
+    "brands": "Brands",
+    "years": "Production Years",
+    "origins": "Origin",
+    "oilFilter": "Oil Filter",
+    "airFilter": "Air Filter",
+    "fuelFilter": "Fuel Filter",
+    "cabinFilter": "Cabin Filter",
+    "topSelling": "Top-selling product",
+    "viewAll": "View all",
+    "improvedAppExperience": "Improved app experience"
+  },
+  "product": {
+    "title": "Product",
+    "buyNow": "Buy Now",
+    "shockPrice": "Shock price"
+  },
+  "footer": {
+    "company": "VIET HUNG AUTO PRODUCTION TRADING JOINT STOCK COMPANY",
+    "taxCode": "Tax Code: 0305094228",
+    "address": "Address: 13 Nghia Thuc, Ward 05, District 5, Ho Chi Minh City, Viet Nam",
+    "phone": "Phone number: 0283 760 7607",
+    "hours": "Opening hour: 08:00 – 22:00 from Mon – Fri",
+    "sitemap": "Sitemap",
+    "about": "About",
+    "article": "Article",
+    "cart": "Cart",
+    "contact": "Contact",
+    "legal": "Legal",
+    "privacy": "Privacy Policy",
+    "cookie": "Cookie Policy",
+    "delivery": "Delivery Policy",
+    "faqs": "FAQs",
+    "download": "Download App",
+    "googlePlay": "Google Play Store",
+    "appStore": "Apple App Store",
+    "getItOn": "Get It On",
+    "downloadFrom": "Download from"
+  },
+  "breadcrumb": {
+    "home": "Home",
+    "product": "Products"
+  },
+  "priceFilter": {
+    "below100k": "Below 100,000 đ",
+    "range100k300k": "100,000 đ - 300,000 đ",
+    "range300k500k": "300,000 đ - 500,000 đ",
+    "above500k": "Above 500,000 đ"
+  },
+  "sortBar": {
+    "productList": "Product List",
+    "sortBy": "Sort by",
+    "relevance": "Relevance",
+    "bestsellers": "Best Sellers",
+    "newest": "Newest",
+    "featured": "Featured",
+    "priceLowToHigh": "Price: Low → High"
+  },
+  "benefit": {
+    "freeShipping": "Free Shipping",
+    "freeShippingSubtitle": "With orders over 1 million",
+    "support24_7": "24/7 Support",
+    "support24_7Subtitle": "Dedicated customer service with thoughtful care",
+    "fastDelivery": "Fast Delivery",
+    "fastDeliverySubtitle": "Within 10km radius in Ho Chi Minh City",
+    "return30Days": "30-Day Return",
+    "return30DaysSubtitle": "100% refund if issues arise from manufacturer or shipping"
+  },
+  "notification": {
+    "storeInfo": "View all 88 stores nationwide",
+    "viewNow": "View now"
+  }
+}
