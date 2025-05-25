@@ -87,12 +87,8 @@ const SideBar = NiceModal.create(() => {
           "flex items-center gap-[12px] hover:text-[#024897] text-textPrimary transition-colors"
         )}
       >
-        {category.icon && <span className="mr-2">{category.icon}</span>}
         <span className="text-[16px] font-[600]">
           {t(`sidebar.${category.label}`)}
-        </span>
-        <span className="ml-auto">
-          <IoIosArrowForward />
         </span>
       </Link>
     </div>
@@ -114,7 +110,7 @@ const SideBar = NiceModal.create(() => {
       <Link
         key={menu.label}
         href={menu.url}
-        className="text-textPrimary text-[16px] whitespace-nowrap p-[4px_12px] w-full hover:bg-gray-200 rounded-[8px] font-[500]"
+        className="text-textPrimary text-[16px] whitespace-nowrap p-[4px_12px] hover:bg-gray-100 w-full rounded-[8px] font-[500] hight-light"
       >
         {t(menu.label)}
       </Link>
@@ -172,29 +168,31 @@ const SideBar = NiceModal.create(() => {
         items={originItems}
       />
       <Divider className="my-[8px]" />
-      <div className="text-textPrimary flex-wrap flex justify-between gap-[10px] 2xl:gap-[20px]">
+      <div className="text-textPrimary flex-wrap flex justify-between gap-[20px]">
         {services.map(renderService)}
       </div>
       <Divider className="my-[8px]" />
       <div className="sticky bottom-[-24px] py-[12px] bg-white">
-        <div className="mb-[12px] flex flex-col gap-[12px]">
-          <span className="text-[12px] text-textSecondary font-[600]">
-            {t("sidebar.improvedAppExperience")}
-          </span>
-          <div className="cursor-pointer flex items-center gap-[8px] bg-[#0155C6] text-white w-max p-[12px] rounded-full">
-            <HiDownload size={20} />
-            <span>{t("download")}</span>
+        <div className="flex flex-col !items-start gap-[12px]">
+          <div className="mb-[12px] flex flex-col gap-[12px]">
+            <span className="text-[12px] text-textSecondary font-[600]">
+              {t("sidebar.improvedAppExperience")}
+            </span>
+            <div className="cursor-pointer flex items-center gap-[8px] bg-[#0155C6] text-white w-max p-[12px] rounded-full">
+              <HiDownload size={20} />
+              <span>{t("download")}</span>
+            </div>
           </div>
-        </div>
-        <div className="row gap-[8px] p-[8px_16px] bg-gray-100 rounded-full">
-          <FaPhoneAlt color="#0155C6" />
-          <div>
-            <span className="text-[14px] font-[600] text-[#0155C6]">
-              {t("hotline")}:{" "}
-            </span>
-            <span className="text-[#0155C6] font-[600] text-[14px]">
-              0283 760 7607
-            </span>
+          <div className="row gap-[8px] p-[8px_16px] bg-gray-100 rounded-full">
+            <FaPhoneAlt color="#0155C6" />
+            <div>
+              <span className="text-[14px] font-[600] text-[#0155C6]">
+                {t("hotline")}:{" "}
+              </span>
+              <span className="text-[#0155C6] font-[600] text-[14px]">
+                0283 760 7607
+              </span>
+            </div>
           </div>
         </div>
       </div>

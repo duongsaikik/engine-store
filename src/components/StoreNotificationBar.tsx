@@ -27,7 +27,7 @@ const StoreNotificationBar = () => {
           <div>
             <MapIcon />
           </div>
-          <span className="text-[28px] font-[500] text-textPrimary">
+          <span className="text-[28px] font-[500] flex-1 min-w-[150px] text-textPrimary">
             {t("notification.storeInfo")}
           </span>
         </div>
