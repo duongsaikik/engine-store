@@ -23,7 +23,7 @@ const Banner = () => {
   }, []);
 
   const renderProduct = (product: Product) => (
-    <SwiperSlide key={product.id}>
+    <SwiperSlide key={product.id} className="!flex justify-center items-center">
       <ProductItem product={product} />
     </SwiperSlide>
   );
@@ -31,7 +31,7 @@ const Banner = () => {
   return (
     <div className="mb-[32px]">
       <Image src="/banner.jpg" width={1536} height={500} alt="banner" />
-      <div className="bg-[#025FCA] rounded-br-[12px] rounded-bl-[12px] p-[48px] relative">
+      <div className="bg-[#025FCA] rounded-br-[12px] rounded-bl-[12px] sm:p-[48px] p-[12px] relative">
         {domLoaded && (
           <Swiper
             modules={[Navigation, Pagination, Autoplay]}

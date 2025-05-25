@@ -55,7 +55,7 @@ export default function Home() {
       key={product.id}
       product={product}
       className={cn(
-        "sm:!w-[252px] !w-[148px] [&_.ant-card-body]:p-[8px] [&_.ant-card-body]:sm:p-[24px]"
+        "sm:!w-[49%] md:!w-[49%] lg:!w-[32%] xl:!w-[24%] !w-[46%] [&_.ant-card-body]:p-[8px] [&_.ant-card-body]:sm:p-[24px]"
       )}
       loadMore={handleLoadMore}
     />
@@ -75,7 +75,7 @@ export default function Home() {
         <SideBar data={initialProducts} />
         <Content className="px-[12px] sm:px-[20px] pb-[12px] lg:ml-[20px] bg-white lg:bg-[#F4F6F8]">
           <ProductSortBar onSortChange={() => {}} />
-          <div className="flex flex-wrap gap-[20px]" id="list">
+          <div className="flex flex-wrap gap-[12px]" id="list">
             {data.map(renderProduct)}
           </div>
           {loading && <Skeleton className="mt-[24px]" />}

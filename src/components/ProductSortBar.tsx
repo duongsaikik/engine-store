@@ -118,7 +118,7 @@ const ProductSortBar = ({ onSortChange }: ProductSortBarProps) => {
         <span className="font-[600]">{t("sidebar.filter")}</span>
         <IoFilterOutline size={20} />
       </div>
-      <div className="flex items-center gap-[20px] flex-wrap px-[12px]">
+      <div className="flex items-center gap-[20px] flex-wrap">
         <span className="text-[16px] text-textPrimary font-[500] mr-[20px]">
           {t("sortBar.sortBy")}
         </span>

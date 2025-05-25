@@ -14,7 +14,7 @@ const Footer = React.lazy(() => import("../../components/Footer"));
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata = {
-  title: "Cabinet Shop",
+  title: "Engine Shop",
   description: "Buy high-quality tables and wardrobes online",
 };
 
