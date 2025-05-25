@@ -162,7 +162,7 @@ const SideBar: React.FC<Props> = ({
       width={width}
       className={cn(
         isModal ? "block" : "sticky left-0 top-0 overflow-auto lg:block hidden",
-        "bg-white shadow-lg rounded-[8px] h-[calc(100vmin-45px)]"
+        "bg-white rounded-[8px] h-[calc(100vmin-45px)]"
       )}
     >
       {!hideHeader && (
