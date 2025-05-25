@@ -4,11 +4,7 @@ import NiceModal, { useModal } from "@ebay/nice-modal-react";
 import { Button, Drawer } from "antd";
 import { useTranslations } from "next-intl";
 
-type Props = {
-  onSuccess?: () => void;
-};
-
-const ProductFilter = NiceModal.create(({ onSuccess }: Props) => {
+const ProductFilter = NiceModal.create(() => {
   const modal = useModal();
   const t = useTranslations();
 

@@ -5,7 +5,7 @@ import { notFound } from "next/navigation";
 import React from "react";
 import { DEFAULT_LANGUAGE, SUPPORTED_LANGUAGES } from "../../utils/constants";
 import "../globals.css";
-import '@ant-design/v5-patch-for-react-19';
+import "@ant-design/v5-patch-for-react-19";
 import { ClientOnlyModalProvider } from "./ClientOnlyModalProvider";
 
 const Header = React.lazy(() => import("../../components/Header"));
@@ -30,7 +30,7 @@ export default async function RootLayout({
   if (!hasLocale(routing.locales, locale)) {
     notFound();
   }
-  const validLocale = SUPPORTED_LANGUAGES.includes(locale as any)
+  const validLocale = SUPPORTED_LANGUAGES.includes(locale)
     ? locale
     : DEFAULT_LANGUAGE;
   const messages = (await import(`../../../messages/${validLocale}.json`))

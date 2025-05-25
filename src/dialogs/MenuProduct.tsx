@@ -5,11 +5,7 @@ import Link from "next/link";
 import { useMemo } from "react";
 import { IoIosArrowForward } from "react-icons/io";
 
-type Props = {
-  onSuccess?: () => void;
-};
-
-const MenuProduct = NiceModal.create(({ onSuccess }: Props) => {
+const MenuProduct = NiceModal.create(() => {
   const modal = useModal();
   const t = useTranslations();
 
@@ -73,7 +69,7 @@ const MenuProduct = NiceModal.create(({ onSuccess }: Props) => {
         children: categories.map(renderCategory),
       },
     ],
-    []
+    [t, categories, renderCategory]
   );
 
   return (

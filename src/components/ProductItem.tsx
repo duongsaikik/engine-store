@@ -25,10 +25,8 @@ const ProductItem: React.FC<Props> = ({
   isView = false,
   showHighLight = true,
   className,
-  ref,
   total,
   index,
-  hasMore,
   loadMore,
 }) => {
   const t = useTranslations();

@@ -71,14 +71,12 @@ const Header = () => {
     })),
   };
 
-  const handleOpenCategory = useCallback((open?: boolean) => {
+  const handleOpenCategory = useCallback(() => {
     setIsOpenCategory((prev) => !prev);
   }, []);
 
   const handleOpenMenu = useCallback(() => {
-    NiceModal.show("sidebar", {
-      onSuccess: () => {},
-    });
+    NiceModal.show("sidebar");
   }, []);
 
   const renderMenu = (item: (typeof MENU)[0]) => {

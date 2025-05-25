@@ -14,11 +14,7 @@ import { FaPhoneAlt } from "react-icons/fa";
 import { HiDownload } from "react-icons/hi";
 import { IoIosArrowForward } from "react-icons/io";
 
-type Props = {
-  onSuccess?: () => void;
-};
-
-const SideBar = NiceModal.create(({ onSuccess }: Props) => {
+const SideBar = NiceModal.create(() => {
   const modal = useModal();
   const t = useTranslations();
 
@@ -110,7 +106,7 @@ const SideBar = NiceModal.create(({ onSuccess }: Props) => {
         children: categories.map(renderCategory),
       },
     ],
-    []
+    [t, categories, renderCategory]
   );
 
   const renderMenu = (menu: (typeof MENU)[0]) => {

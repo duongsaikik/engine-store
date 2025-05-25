@@ -67,9 +67,7 @@ const ProductSortBar = ({ onSortChange }: ProductSortBarProps) => {
   };
 
   const handleOpenFilter = () => {
-    NiceModal.show("product-filter", {
-      onSuccess: () => {},
-    });
+    NiceModal.show("product-filter");
   };
 
   const renderButton = (value: (typeof sortOptions1)[0]) => {
