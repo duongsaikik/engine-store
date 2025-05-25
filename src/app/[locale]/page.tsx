@@ -10,8 +10,8 @@ import { cn } from "@/utils/common";
 import { LIMIT } from "@/utils/constants";
 import { Layout, Skeleton } from "antd";
 import { useEffect, useRef, useState } from "react";
-import { Product } from "../../types";
 import { registerDialogs } from "../../dialogs";
+import { Product } from "../../types";
 
 const { Content } = Layout;
 
@@ -55,7 +55,7 @@ export default function Home() {
       key={product.id}
       product={product}
       className={cn(
-        "sm:!w-[49%] md:!w-[49%] lg:!w-[32%] xl:!w-[24%] !w-[46%] [&_.ant-card-body]:p-[8px] [&_.ant-card-body]:sm:p-[24px]"
+        "sm:!w-[49%] md:!w-[49%] lg:!w-[32%] xl:!w-[24%] !w-[48%] [&_.ant-card-body]:p-[8px] [&_.ant-card-body]:sm:p-[24px]"
       )}
       loadMore={handleLoadMore}
     />
@@ -73,7 +73,7 @@ export default function Home() {
       </Layout>
       <Layout className="min-h-screen container mx-auto bg-white rounded-[8px] lg:bg-[#F4F6F8]">
         <SideBar data={initialProducts} />
-        <Content className="px-[12px] sm:px-[20px] pb-[12px] lg:ml-[20px] bg-white lg:bg-[#F4F6F8]">
+        <Content className="p-[12px] pb-[12px] lg:p-[0_0_0_20px] bg-white lg:bg-[#F4F6F8]">
           <ProductSortBar onSortChange={() => {}} />
           <div className="flex flex-wrap gap-[12px]" id="list">
             {data.map(renderProduct)}
