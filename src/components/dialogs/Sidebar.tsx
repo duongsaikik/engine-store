@@ -172,26 +172,24 @@ const SideBar = NiceModal.create(() => {
       </div>
       <Divider className="my-[8px]" />
       <div className="sticky bottom-[-24px] py-[12px] bg-white">
-        <div className="flex flex-col !items-start gap-[12px]">
-          <div className="mb-[12px] flex flex-col gap-[12px]">
-            <span className="text-[12px] text-textSecondary font-[600]">
-              {t("sidebar.improvedAppExperience")}
-            </span>
-            <div className="cursor-pointer flex items-center gap-[8px] bg-[#0155C6] text-white w-max p-[12px] rounded-full">
-              <HiDownload size={20} />
-              <span>{t("download")}</span>
-            </div>
+        <div className="mb-[12px] flex flex-col gap-[12px]">
+          <span className="text-[12px] text-textSecondary font-[600]">
+            {t("sidebar.improvedAppExperience")}
+          </span>
+          <div className="cursor-pointer flex items-center gap-[8px] bg-[#0155C6] text-white w-max p-[12px] rounded-full">
+            <HiDownload size={20} />
+            <span>{t("download")}</span>
           </div>
-          <div className="row gap-[8px] p-[8px_16px] bg-gray-100 rounded-full">
-            <FaPhoneAlt color="#0155C6" />
-            <div>
-              <span className="text-[14px] font-[600] text-[#0155C6]">
-                {t("hotline")}:{" "}
-              </span>
-              <span className="text-[#0155C6] font-[600] text-[14px]">
-                0283 760 7607
-              </span>
-            </div>
+        </div>
+        <div className="row gap-[8px] p-[8px_16px] bg-gray-100 rounded-full">
+          <FaPhoneAlt color="#0155C6" />
+          <div>
+            <span className="text-[14px] font-[600] text-[#0155C6]">
+              {t("hotline")}:{" "}
+            </span>
+            <span className="text-[#0155C6] font-[600] text-[14px]">
+              0283 760 7607
+            </span>
           </div>
         </div>
       </div>

@@ -43,7 +43,7 @@ const Banner = () => {
             onBeforeInit={(swiper) => {
               swiperRef.current = swiper;
             }}
-            slidesPerView={1}
+            slidesPerView={2}
             breakpoints={{
               640: { slidesPerView: 2 },
               1024: { slidesPerView: 3 },

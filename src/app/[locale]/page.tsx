@@ -10,7 +10,7 @@ import { cn } from "@/utils/common";
 import { LIMIT } from "@/utils/constants";
 import { Layout, Skeleton } from "antd";
 import { useEffect, useRef, useState } from "react";
-import { registerDialogs } from "../../dialogs";
+import { registerDialogs } from "@/components/dialogs";
 import { Product } from "../../types";
 
 const { Content } = Layout;

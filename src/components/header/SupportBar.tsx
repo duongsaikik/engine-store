@@ -1,0 +1,39 @@
+import ClockIcon from "@/assets/icons/ClockIcon";
+import DeliveryIcon from "@/assets/icons/DeliveryIcon";
+import TruckIcon from "@/assets/icons/TruckIcon";
+import ExchangeIcon from "@/assets/icons/ExchangeIcon";
+
+interface SupportBarProps {
+  t: (key: string) => string;
+}
+
+const SupportBar = ({ t }: SupportBarProps) => (
+  <div className="text-textPrimary hidden lg:flex  flex-wrap !justify-end gap-[10px] 2xl:gap-[20px]">
+    <div className="row gap-[8px]">
+      <ClockIcon />
+      <span className="text-[16px] font-[600] whitespace-nowrap">
+        {t("header.menu.support")}
+      </span>
+    </div>
+    <div className="row gap-[8px]">
+      <DeliveryIcon />
+      <span className="text-[16px] font-[600] whitespace-nowrap">
+        {t("header.menu.freeShipping")}
+      </span>
+    </div>
+    <div className="row gap-[8px]">
+      <TruckIcon />
+      <span className="text-[16px] font-[600] whitespace-nowrap">
+        {t("header.menu.fastDelivery")}
+      </span>
+    </div>
+    <div className="row gap-[8px]">
+      <ExchangeIcon />
+      <span className="text-[16px] font-[600] whitespace-nowrap">
+        {t("header.menu.returns")}
+      </span>
+    </div>
+  </div>
+);
+
+export default SupportBar; 

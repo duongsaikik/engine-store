@@ -8,7 +8,7 @@ import "../globals.css";
 import "@ant-design/v5-patch-for-react-19";
 import { ClientOnlyModalProvider } from "./ClientOnlyModalProvider";
 
-const Header = React.lazy(() => import("../../components/Header"));
+const Header = React.lazy(() => import("../../components/header/page"));
 const Footer = React.lazy(() => import("../../components/Footer"));
 
 const inter = Inter({ subsets: ["latin"] });
