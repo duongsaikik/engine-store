@@ -5,7 +5,6 @@ import { carts } from "@/libs/data";
 import { cn } from "@/utils/common";
 import { MENU, SUPPORTED_LANGUAGES } from "@/utils/constants";
 import NiceModal from "@ebay/nice-modal-react";
-import { MenuProps } from "antd";
 import { useLocale, useTranslations } from "next-intl";
 import Image from "next/image";
 import Link from "next/link";
@@ -89,7 +88,11 @@ const Header = () => {
           </div>
 
           <div className="flex items-center gap-[12px] xl:gap-[34px]">
-            <LanguageDropdown locale={locale} supportedLanguages={SUPPORTED_LANGUAGES as unknown as string[]} changeLanguage={changeLanguage} />
+            <LanguageDropdown
+              locale={locale}
+              supportedLanguages={SUPPORTED_LANGUAGES as unknown as string[]}
+              changeLanguage={changeLanguage}
+            />
             <CartPopover count={12} product={carts[0]} label={t("cart")} />
             <AccountLink label={t("account")} className="lg:block hidden" />
           </div>
@@ -99,7 +102,11 @@ const Header = () => {
         </div>
         <div className="pt-2 pb-[16px] px-[8px] sm:px-[4px] lg:flex hidden">
           <div className="flex justify-between items-center w-full gap-[30px]">
-            <CategoryMenuButton isOpenCategory={isOpenCategory} handleOpenCategory={(open) => setIsOpenCategory(open)} t={t} />
+            <CategoryMenuButton
+              isOpenCategory={isOpenCategory}
+              handleOpenCategory={(open) => setIsOpenCategory(open)}
+              t={t}
+            />
             <div className="hidden lg:flex flex-1">
               <div className="flex items-center gap-[20px] flex-1">
                 {MENU.map(renderMenu)}
