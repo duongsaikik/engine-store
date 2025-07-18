@@ -31,7 +31,7 @@ const Banner = () => {
   return (
     <div className="mb-[32px]">
       <Image src="/banner.jpg" width={1536} height={500} alt="banner" />
-      <div className="bg-[#025FCA] rounded-br-[12px] rounded-bl-[12px] sm:p-[48px] p-[12px] relative">
+      <div className="bg-buttonBg rounded-br-[12px] rounded-bl-[12px] sm:p-[48px] p-[12px] relative">
         {domLoaded && (
           <Swiper
             modules={[Navigation, Pagination, Autoplay]}
@@ -58,13 +58,13 @@ const Banner = () => {
         )}
         <div>
           <button
-            className="absolute text-red-400 top-1/2 left-[25px] -translate-y-1/2 size-[40px] bg-[#CDE4FE] rounded-full row z-[9]"
+            className="absolute text-red-400 top-1/2 left-[25px] -translate-y-1/2 size-[40px] bg-bannerNavBg rounded-full row z-[9]"
             onClick={() => swiperRef.current?.slidePrev()}
           >
             <SlArrowLeft size={16} color="#013065" />
           </button>
           <button
-            className="absolute top-1/2 right-[25px] -translate-y-1/2 text-red-400 size-[40px] bg-[#CDE4FE] rounded-full row z-[9]"
+            className="absolute top-1/2 right-[25px] -translate-y-1/2 text-red-400 size-[40px] bg-bannerNavBg rounded-full row z-[9]"
             onClick={() => swiperRef.current?.slideNext()}
           >
             <SlArrowRight size={16} color="#013065" />

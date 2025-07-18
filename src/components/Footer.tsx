@@ -30,14 +30,14 @@ const Footer = () => {
   };
 
   return (
-    <footer className="bg-blue-50 text-gray-700 mx-auto">
+    <footer className="bg-blue50 text-gray700 mx-auto">
       <BenefitBar />
       <StoreNotificationBar />
       <div className=" relative">
         <div className="absolute w-full h-full bg-[url(/footer.jpg)] bg-cover bg-center opacity-35 z-1" />
         <div className="z-10 py-[96px] px-[8px] relative row !items-start !justify-between flex-wrap gap-[24px] container mx-auto">
           <div className="flex flex-col !items-start gap-[32px] sm:w-max w-full">
-            <h3 className="font-[600] text-[16px] text-[#013065]">
+            <h3 className="font-[600] text-[16px] text-buttonText">
               {t("footer.company")}
             </h3>
             <div>

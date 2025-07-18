@@ -11,7 +11,25 @@ export const carts = [
     brand: "1",
     category: "1",
     origin: "1",
+    classification: "engine",
   },
+];
+
+export const classificationList = [
+  { id: "engine", name: "Engine" },
+  { id: "body", name: "Body" },
+  { id: "electrical", name: "Electrical" },
+  { id: "interior", name: "Interior" },
+  { id: "exterior", name: "Exterior" },
+  { id: "suspension", name: "Suspension" },
+  { id: "brakes", name: "Brakes" },
+  { id: "cooling", name: "Cooling" },
+  { id: "transmission", name: "Transmission" },
+  { id: "fuel", name: "Fuel" },
+  { id: "lighting", name: "Lighting" },
+  { id: "wheels", name: "Wheels" },
+  { id: "tires", name: "Tires" },
+  { id: "accessories", name: "Accessories" },
 ];
 
 export const initialProducts: Product[] = [
@@ -24,6 +42,7 @@ export const initialProducts: Product[] = [
     brand: "1",
     category: "1",
     origin: "1",
+    classification: "engine",
   },
   {
     id: uuidv4(),
@@ -34,6 +53,7 @@ export const initialProducts: Product[] = [
     brand: "1",
     category: "1",
     origin: "1",
+    classification: "engine",
   },
   {
     id: uuidv4(),
@@ -44,6 +64,7 @@ export const initialProducts: Product[] = [
     brand: "1",
     category: "2",
     origin: "1",
+    classification: "engine",
   },
   {
     id: uuidv4(),
@@ -54,6 +75,7 @@ export const initialProducts: Product[] = [
     brand: "1",
     category: "1",
     origin: "3",
+    classification: "engine",
   },
   {
     id: uuidv4(),
@@ -64,6 +86,7 @@ export const initialProducts: Product[] = [
     brand: "3",
     category: "1",
     origin: "1",
+    classification: "engine",
   },
   {
     id: uuidv4(),
@@ -74,6 +97,7 @@ export const initialProducts: Product[] = [
     brand: "1",
     category: "1",
     origin: "2",
+    classification: "engine",
   },
   {
     id: uuidv4(),
@@ -84,6 +108,7 @@ export const initialProducts: Product[] = [
     brand: "1",
     category: "1",
     origin: "1",
+    classification: "engine",
   },
   {
     id: uuidv4(),
@@ -94,6 +119,7 @@ export const initialProducts: Product[] = [
     brand: "1",
     category: "1",
     origin: "1",
+    classification: "engine",
   },
   {
     id: uuidv4(),
@@ -104,6 +130,7 @@ export const initialProducts: Product[] = [
     brand: "1",
     category: "2",
     origin: "1",
+    classification: "engine",
   },
   {
     id: uuidv4(),
@@ -114,6 +141,7 @@ export const initialProducts: Product[] = [
     brand: "1",
     category: "1",
     origin: "3",
+    classification: "engine",
   },
   {
     id: uuidv4(),
@@ -124,6 +152,7 @@ export const initialProducts: Product[] = [
     brand: "3",
     category: "1",
     origin: "1",
+    classification: "engine",
   },
   {
     id: uuidv4(),
@@ -134,6 +163,7 @@ export const initialProducts: Product[] = [
     brand: "1",
     category: "1",
     origin: "2",
+    classification: "engine",
   },
   {
     id: uuidv4(),
@@ -144,6 +174,7 @@ export const initialProducts: Product[] = [
     brand: "1",
     category: "1",
     origin: "1",
+    classification: "engine",
   },
   {
     id: uuidv4(),
@@ -154,6 +185,7 @@ export const initialProducts: Product[] = [
     brand: "1",
     category: "1",
     origin: "1",
+    classification: "engine",
   },
   {
     id: uuidv4(),
@@ -164,6 +196,7 @@ export const initialProducts: Product[] = [
     brand: "1",
     category: "2",
     origin: "1",
+    classification: "engine",
   },
   {
     id: uuidv4(),
@@ -174,6 +207,7 @@ export const initialProducts: Product[] = [
     brand: "1",
     category: "1",
     origin: "3",
+    classification: "engine",
   },
   {
     id: uuidv4(),
@@ -184,6 +218,7 @@ export const initialProducts: Product[] = [
     brand: "3",
     category: "1",
     origin: "1",
+    classification: "engine",
   },
   {
     id: uuidv4(),
@@ -194,6 +229,7 @@ export const initialProducts: Product[] = [
     brand: "1",
     category: "1",
     origin: "2",
+    classification: "engine",
   },
   {
     id: uuidv4(),
@@ -204,6 +240,7 @@ export const initialProducts: Product[] = [
     brand: "1",
     category: "1",
     origin: "1",
+    classification: "engine",
   },
   {
     id: uuidv4(),
@@ -214,6 +251,7 @@ export const initialProducts: Product[] = [
     brand: "1",
     category: "1",
     origin: "1",
+    classification: "engine",
   },
   {
     id: uuidv4(),
@@ -224,6 +262,7 @@ export const initialProducts: Product[] = [
     brand: "1",
     category: "2",
     origin: "1",
+    classification: "engine",
   },
   {
     id: uuidv4(),
@@ -234,6 +273,7 @@ export const initialProducts: Product[] = [
     brand: "1",
     category: "1",
     origin: "3",
+    classification: "engine",
   },
   {
     id: uuidv4(),
@@ -244,6 +284,7 @@ export const initialProducts: Product[] = [
     brand: "3",
     category: "1",
     origin: "1",
+    classification: "engine",
   },
   {
     id: uuidv4(),
@@ -254,66 +295,7 @@ export const initialProducts: Product[] = [
     brand: "1",
     category: "1",
     origin: "2",
-  },
-  {
-    id: uuidv4(),
-    name: "Lọc gió động cơ Air Filter - Chevrolet Colorado, Trail...",
-    price: 299000,
-    originalPrice: 329000,
-    image: "/images/air-filter-1.png",
-    brand: "1",
-    category: "1",
-    origin: "1",
-  },
-  {
-    id: uuidv4(),
-    name: "Lọc gió động cơ Air Filter - Chevrolet Colorado, Trail...",
-    price: 299000,
-    originalPrice: 329000,
-    image: "/images/air-filter-2.png",
-    brand: "1",
-    category: "1",
-    origin: "1",
-  },
-  {
-    id: uuidv4(),
-    name: "Lọc gió động cơ Air Filter - Chevrolet Colorado, Trail...",
-    price: 299000,
-    originalPrice: 329000,
-    image: "/images/air-filter-3.png",
-    brand: "1",
-    category: "2",
-    origin: "1",
-  },
-  {
-    id: uuidv4(),
-    name: "Lọc gió động cơ Air Filter - Chevrolet Colorado, Trail...",
-    price: 299000,
-    originalPrice: 329000,
-    image: "/images/air-filter-4.png",
-    brand: "1",
-    category: "1",
-    origin: "3",
-  },
-  {
-    id: uuidv4(),
-    name: "Lọc gió động cơ Air Filter - Chevrolet Colorado, Trail...",
-    price: 299000,
-    originalPrice: 329000,
-    image: "/images/air-filter-4.png",
-    brand: "3",
-    category: "1",
-    origin: "1",
-  },
-  {
-    id: uuidv4(),
-    name: "Lọc gió động cơ Air Filter - Chevrolet Colorado, Trail...",
-    price: 299000,
-    originalPrice: 329000,
-    image: "/images/air-filter-4.png",
-    brand: "1",
-    category: "1",
-    origin: "2",
+    classification: "engine",
   },
 ];
 
@@ -324,6 +306,39 @@ export const fetchData = (page: number, limit: number) => {
   return {
     data: data || [],
     total: initialProducts.length,
+    currentPage: page,
+    limit,
+    hasMore: data?.length > 0,
+  };
+};
+
+export const fetchDataByClassification = (
+  classification: string,
+  page: number,
+  limit: number
+) => {
+  const filtered = initialProducts.filter(
+    (product) => product.classification === classification
+  );
+  const start = page * limit - limit;
+  const end = page * limit;
+  const data = filtered.slice(start, end);
+  return {
+    data: data || [],
+    total: filtered.length,
+    currentPage: page,
+    limit,
+    hasMore: data?.length > 0,
+  };
+};
+
+export const fetchClassifications = (page = 1, limit = 10) => {
+  const start = page * limit - limit;
+  const end = page * limit;
+  const data = classificationList.slice(start, end);
+  return {
+    data: data || [],
+    total: classificationList.length,
     currentPage: page,
     limit,
     hasMore: data?.length > 0,

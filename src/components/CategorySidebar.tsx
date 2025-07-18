@@ -41,15 +41,15 @@ const CategorySidebar = () => {
     <div
       key={category.key}
       className={cn(
-        index === 0 && "bg-[#F4F6F8] !border-l-[3px]",
-        "mb-4 hover:bg-[#F4F6F8] hover:border-l-[3px] border-l-0 border-[#0D57C6] p-[16px] cursor-pointer"
+        index === 0 && "bg-sidebarBg !border-l-[3px]",
+        "mb-4 hover:bg-sidebarBg hover:border-l-[3px] border-l-0 border-sidebarBorder p-[16px] cursor-pointer"
       )}
     >
       <Link
         href={`/#`}
         className={cn(
-          index === 0 && "text-[#024897] ",
-          "flex items-center gap-[12px] hover:text-[#024897] text-textPrimary transition-colors"
+          index === 0 && "text-sidebarText ",
+          "flex items-center gap-[12px] hover:text-sidebarText text-textPrimary transition-colors"
         )}
       >
         {category.icon && <span className="mr-2">{category.icon}</span>}

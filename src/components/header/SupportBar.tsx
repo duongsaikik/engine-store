@@ -8,7 +8,7 @@ interface SupportBarProps {
 }
 
 const SupportBar = ({ t }: SupportBarProps) => (
-  <div className="text-textPrimary hidden lg:flex  flex-wrap !justify-end gap-[10px] 2xl:gap-[20px]">
+  <div className="text-textPrimary flex flex-wrap lg:flex-nowrap 2xl:w-auto w-full justify-between lg:justify-end gap-[20px]">
     <div className="row gap-[8px]">
       <ClockIcon />
       <span className="text-[16px] font-[600] whitespace-nowrap">
@@ -36,4 +36,4 @@ const SupportBar = ({ t }: SupportBarProps) => (
   </div>
 );
 
-export default SupportBar; 
+export default SupportBar;

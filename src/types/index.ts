@@ -7,6 +7,12 @@ export interface Product {
   brand: string;
   category: string;
   origin: string;
+  classification?: string;
+}
+
+export interface Classification {
+  id: string;
+  name: string;
 }
 
 export interface FilterState {

@@ -7,7 +7,11 @@ interface LanguageDropdownProps {
   changeLanguage: (locale: string) => void;
 }
 
-const LanguageDropdown = ({ locale, supportedLanguages, changeLanguage }: LanguageDropdownProps) => {
+const LanguageDropdown = ({
+  locale,
+  supportedLanguages,
+  changeLanguage,
+}: LanguageDropdownProps) => {
   const languageMenu: MenuProps = {
     items: supportedLanguages?.map((loc: string) => ({
       key: loc,
@@ -16,10 +20,14 @@ const LanguageDropdown = ({ locale, supportedLanguages, changeLanguage }: Langua
     })),
   };
   return (
-    <Dropdown menu={languageMenu} trigger={["click"]} className="text-textPrimary ">
+    <Dropdown
+      menu={languageMenu}
+      trigger={["click"]}
+      className="text-textPrimary hover:bg-hover cursor-pointer p-[4px] rounded-[8px] transition-all duration-200"
+    >
       <div className="row gap-[8px]">
         <Image
-          className="cursor-pointer rounded-full lg:size-[36px] size-[24px]"
+          className="cursor-pointer rounded-full xl:size-[36px] sm:size-[28px] size-[24px]"
           src={locale === "en" ? "/england-flag.png" : "/vietnam-flag.png"}
           width={36}
           height={36}
@@ -35,4 +43,4 @@ const LanguageDropdown = ({ locale, supportedLanguages, changeLanguage }: Langua
   );
 };
 
-export default LanguageDropdown; 
+export default LanguageDropdown;

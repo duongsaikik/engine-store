@@ -87,7 +87,7 @@ const Header = () => {
             <SearchBar variant="desktop" />
           </div>
 
-          <div className="flex items-center gap-[12px] xl:gap-[34px]">
+          <div className="flex items-center gap-[18px] xl:gap-[30px]">
             <LanguageDropdown
               locale={locale}
               supportedLanguages={SUPPORTED_LANGUAGES as unknown as string[]}
@@ -100,16 +100,18 @@ const Header = () => {
         <div className="block lg:hidden w-full pb-[24px] px-[8px] sm:px-0">
           <SearchBar variant="mobile" />
         </div>
-        <div className="pt-2 pb-[16px] px-[8px] sm:px-[4px] lg:flex hidden">
-          <div className="flex justify-between items-center w-full gap-[30px]">
-            <CategoryMenuButton
-              isOpenCategory={isOpenCategory}
-              handleOpenCategory={(open) => setIsOpenCategory(open)}
-              t={t}
-            />
-            <div className="hidden lg:flex flex-1">
-              <div className="flex items-center gap-[20px] flex-1">
-                {MENU.map(renderMenu)}
+        <div className="pt-2 pb-[16px] px-[8px] lg:flex hidden">
+          <div className="flex justify-between flex-wrap items-center w-full gap-[12px]">
+            <div className="w-1/2 gap-[24px] flex">
+              <CategoryMenuButton
+                isOpenCategory={isOpenCategory}
+                handleOpenCategory={(open) => setIsOpenCategory(open)}
+                t={t}
+              />
+              <div className="hidden lg:flex flex-1">
+                <div className="flex items-center gap-[20px] flex-1">
+                  {MENU.map(renderMenu)}
+                </div>
               </div>
             </div>
             <SupportBar t={t} />

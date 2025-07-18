@@ -60,7 +60,7 @@ const ProductItem: React.FC<Props> = ({
           className="object-contain mx-auto"
         />
       }
-      className={cn(className, "rounded-lg w-[252px] shadow-md")}
+      className={cn(className, "rounded-lg w-[252px] shadow-md [&_.ant-card-body]:p-[12px] [&_.ant-card-body]:sm:p-[24px]")}
     >
       <Card.Meta
         title={
@@ -92,7 +92,7 @@ const ProductItem: React.FC<Props> = ({
             <Button
               hidden={isView}
               type="primary"
-              className="mt-2 w-full bg-[#E6F1FF] text-[#025FCA] font-[700] text-[14px] hover:bg-blue-600"
+              className="mt-2 w-full bg-buttonBgLight text-buttonBg font-[700] text-[14px] hover:bg-blue-600"
             >
               {t("product.buyNow")}
             </Button>

@@ -75,18 +75,23 @@ const SideBar = NiceModal.create(() => {
     <div
       key={category.key}
       className={cn(
-        index === 0 && "bg-[#F4F6F8] !border-l-[3px]",
-        "mb-4 hover:bg-[#F4F6F8] hover:border-l-[3px] border-l-0 border-[#0D57C6] p-[16px] cursor-pointer"
+        index === 0 && "text-sidebarText",
+        "hover:bg-sidebarBg py-[12px] px-[16px] cursor-pointer",
+        index !== categories.length - 1 && "border-b"
       )}
     >
       <Link
         href={`/#`}
         className={cn(
-          index === 0 && "text-[#024897] ",
-          "flex items-center gap-[12px] hover:text-[#024897] text-textPrimary transition-colors"
+          "flex items-center gap-[12px] hover:text-sidebarText text-textPrimary transition-colors"
         )}
       >
-        <span className="text-[16px] font-[600]">
+        <span
+          className={cn(
+            "text-[14px] font-[600]",
+            index === 0 && "text-sidebarText"
+          )}
+        >
           {t(`sidebar.${category.label}`)}
         </span>
       </Link>
@@ -98,7 +103,14 @@ const SideBar = NiceModal.create(() => {
       {
         key: "1",
         label: t("header.menu.category"),
-        children: categories.map(renderCategory),
+        classNames:{
+          header:'[&_.ant-collapse-header-text]:font-[600] [&_.ant-collapse-header-text]:text-[16px]'
+        },
+        children: (
+          <div className="rounded-lg bg-[#eaeffa]">
+            {categories.map(renderCategory)}
+          </div>
+        ),
       },
     ],
     [t, categories, renderCategory]
@@ -132,8 +144,8 @@ const SideBar = NiceModal.create(() => {
 
   return (
     <Drawer
-      className="[&_.ant-drawer-content-wrapper]:!w-full [&_.ant-drawer-content-wrapper]:sm:!w-[50%] [&_.ant-drawer-header-title]:flex-row-reverse [&_.ant-drawer-close]:!m-0
-          [&_.ant-drawer-footer]:flex [&_.ant-drawer-footer]:justify-end"
+      className="[&_.ant-drawer-content-wrapper]:!w-full [&_.ant-drawer-content-wrapper]:sm:!w-[50%] [&_.ant-drawer-header-title]:flex-row-reverse [&_.ant-drawer-close]:!m-0"
+      classNames={{ body: "!p-0", footer: "flex justify-end" }}
       title={
         <Image
           src={"/logo.png"}
@@ -165,18 +177,20 @@ const SideBar = NiceModal.create(() => {
         expandIconPosition="end"
         ghost
         items={originItems}
+        className="123"
+
       />
       <Divider className="my-[8px]" />
       <div className="text-textPrimary flex-wrap flex justify-between gap-[20px]">
         {services.map(renderService)}
       </div>
       <Divider className="my-[8px]" />
-      <div className="sticky bottom-[-24px] py-[12px] bg-white">
+      <div className="p-[12px] bg-white">
         <div className="mb-[12px] flex flex-col gap-[12px]">
           <span className="text-[12px] text-textSecondary font-[600]">
             {t("sidebar.improvedAppExperience")}
           </span>
-          <div className="cursor-pointer flex items-center gap-[8px] bg-[#0155C6] text-white w-max p-[12px] rounded-full">
+          <div className="cursor-pointer flex items-center gap-[8px] bg-buttonBg text-white w-max p-[12px] rounded-full">
             <HiDownload size={20} />
             <span>{t("download")}</span>
           </div>
@@ -184,10 +198,10 @@ const SideBar = NiceModal.create(() => {
         <div className="row gap-[8px] p-[8px_16px] bg-gray-100 rounded-full">
           <FaPhoneAlt color="#0155C6" />
           <div>
-            <span className="text-[14px] font-[600] text-[#0155C6]">
+            <span className="text-[14px] font-[600] text-buttonBg">
               {t("hotline")}:{" "}
             </span>
-            <span className="text-[#0155C6] font-[600] text-[14px]">
+            <span className="text-buttonBg font-[600] text-[14px]">
               0283 760 7607
             </span>
           </div>
