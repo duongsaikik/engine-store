@@ -14,7 +14,8 @@ const ProductFilter = NiceModal.create(() => {
 
   return (
     <Drawer
-      className="[&_.ant-drawer-content-wrapper]:!w-full [&_.ant-drawer-content-wrapper]:sm:!w-[50%]"
+      className="[&_.ant-drawer-content-wrapper]:!w-full [&_.ant-drawer-content-wrapper]:sm:!w-[50%] [&_.ant-drawer-header-title]:flex-row-reverse [&_.ant-drawer-close]:!m-0"
+      classNames={{ body: "!p-0", footer: "flex justify-end" }}
       title={t("sidebar.filter")}
       open={modal.visible}
       onClose={modal.hide}
