@@ -1,10 +1,11 @@
 import { Popover } from "antd";
 import { FaShoppingCart } from "react-icons/fa";
 import ProductItem from "../ProductItem";
+import { Product } from "@/types";
 
 interface CartPopoverProps {
   count: number;
-  product: any;
+  product: Product;
   label?: string;
 }
 
